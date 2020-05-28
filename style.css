@@ -21,7 +21,7 @@ body {
     align-content: center;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, auto)
 }
 
 .cell {
@@ -41,11 +41,11 @@ body {
     border-top: none;
 }
 
-.cell:nth-child(3n+1) {
+.cell:nth-child(3n + 1) {
     border-left: none;
 }
 
-.cell:nth-child(3n+3) {
+.cell:nth-child(3n + 3) {
     border-right: none;
 }
 
@@ -84,12 +84,12 @@ body {
 
 .cell.x::before,
 .board.x .cell:not(.x):not(.circle):hover::before {
-    transform: rotate(45deg)
+    transform: rotate(45deg);
 }
 
 .cell.x::after,
 .board.x .cell:not(.x):not(.circle):hover::after {
-    transform: rotate(-45deg)
+    transform: rotate(-45deg);
 }
 
 .cell.circle::before,
@@ -110,7 +110,7 @@ body {
 .cell.circle::after,
 .board.circle .cell:not(.x):not(.circle):hover::after {
     width: calc(var(--mark-size) * .7);
-    height: calc(var(--mark-size)* .7);
+    height: calc(var(--mark-size) * .7);
     background-color: white;
 }
 
@@ -143,6 +143,6 @@ body {
     border-color: white;
 }
 
-.winning-message .show {
+.winning-message.show {
     display: flex;
 }
